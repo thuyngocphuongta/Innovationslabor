@@ -1,11 +1,18 @@
 Package: Innovationslabor
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Calculation of co2 Emissions yearly
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: person("Thuy N. P.", "Ta", 
+  email = "thuy.ta@campus.lmu.de",
+  role = c("aut", "cre"))
+Maintainer: 
+Description: The Kaya Identity is an equation that expresses yearly CO2 emissions as a product of four factors:
+  Population size (in millions)
+  GDP per capita (in 1000$/person)
+  Energy intensity (in Gigajoule/$1000GDP). Energy intensity is the energy needed to produce a certain
+  amount of economic value.
+  Carbon intensity (in tonnes CO2/Gigajoule). Carbon intensity is the CO2 emitted for produced energy.
+  This number depends on the energy mix used (coal, solar, . . . ).
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true

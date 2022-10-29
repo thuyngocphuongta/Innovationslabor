@@ -19,14 +19,21 @@ library(checkmate)
 #'
 #' @examples
 #' Kaya_equation(82.4,44,5,0.05)
-Kaya_equation <- function(pop, gdp, enInt, carbInt) {
+Kaya_equation <- function(pop, gdp, enInt, carbInt, output_type = "CO2") {
   assertNumeric(pop, any.missing = FALSE, lower = 0)
   assertNumeric(gdp, any.missing = FALSE, lower = 0)
   assertNumeric(enInt, any.missing = FALSE, lower = 0)
   assertNumeric(carbInt, any.missing = FALSE, lower = 0)
 
   co2 = pop * gdp * enInt * carbInt
-  return(co2)
+  if(output_type == "CO2"){
+    return(co2)
+  }
+  else
+  {
+    return(co2/3.67)
+  }
+
 }
 
 # Inputs of Germany:
@@ -38,3 +45,7 @@ Kaya_equation <- function(pop, gdp, enInt, carbInt) {
 # Calculating co2 emissions of Germany
 Kaya_equation(82.4,44,5,0.05)
 # 906.4
+
+# Calculating the tonnes of Carbon (C)
+Kaya_equation(82.4,44,5,0.05, "C")
+# 246.9755

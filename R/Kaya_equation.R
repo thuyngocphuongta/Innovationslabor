@@ -1,6 +1,11 @@
 # This is an example function named 'Kaya Equation'
 # which expresses yearly CO2 emissions
 
+# First, import all necessary packages
+library(devtools)
+library(checkmate)
+
+
 #' Calculation of co2 Emissions yearly
 #'
 #' @param pop numeric indicating Population size (in millions)
@@ -15,6 +20,11 @@
 #' @examples
 #' Kaya_equation(82.4,44,5,0.05)
 Kaya_equation <- function(pop, gdp, enInt, carbInt) {
+  assertNumeric(pop, any.missing = FALSE, lower = 0)
+  assertNumeric(gdp, any.missing = FALSE, lower = 0)
+  assertNumeric(enInt, any.missing = FALSE, lower = 0)
+  assertNumeric(carbInt, any.missing = FALSE, lower = 0)
+
   co2 = pop * gdp * enInt * carbInt
   return(co2)
 }

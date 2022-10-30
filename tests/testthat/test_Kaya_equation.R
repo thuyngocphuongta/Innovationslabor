@@ -7,6 +7,6 @@ test_that("Kaya equation", {
 })
 
 test_that("Check for error of Kaya equation", {
-  expect_no_error(Kaya_equation(-82.4,44,5,0.05))
+  expect_error(Kaya_equation(-82.4,44,5,0.05))
 })
 

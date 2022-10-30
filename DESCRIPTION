@@ -2,10 +2,8 @@ Package: Innovationslabor
 Type: Package
 Title: Calculation of co2 Emissions yearly
 Version: 0.1.0
-Author: person("Thuy N. P.", "Ta", 
-  email = "thuy.ta@campus.lmu.de",
-  role = c("aut", "cre"))
-Maintainer: 
+Author: Thuy Ngoc Phuong Ta <thuy.ta@campus.lmu.de>
+Maintainer: Thuy Ngoc Phuong Ta <thuy.ta@campus.lmu.de>
 Description: The Kaya Identity is an equation that expresses yearly CO2 emissions as a product of four factors:
   Population size (in millions)
   GDP per capita (in 1000$/person)

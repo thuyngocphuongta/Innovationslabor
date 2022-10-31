@@ -1,4 +1,5 @@
 library(testthat)
+library(checkmate)
 library(Innovationslabor)
 
 # use test_that to create tests

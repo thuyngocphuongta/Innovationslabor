@@ -1,4 +1,5 @@
 # First, import all necessary packages
+library(usethis)
 library(devtools)
 library(checkmate)
 

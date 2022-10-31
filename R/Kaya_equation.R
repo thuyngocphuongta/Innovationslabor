@@ -50,3 +50,4 @@ Kaya_equation(82.4,44,5,0.05,"CO2")
 # Calculating the tonnes of Carbon (C)
 Kaya_equation(82.4,44,5,0.05, "C")
 # 246.9755
+

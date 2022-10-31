@@ -19,10 +19,11 @@ library(checkmate)
 #' @examples
 #' Kaya_equation(82.4, 44, 5, 0.05, "CO2")
 Kaya_equation<- function(pop, gdp, enInt, carbInt, output_type = "CO2") {
-  assertNumeric(pop, any.missing = FALSE, lower = 0)
-  assertNumeric(gdp, any.missing = FALSE, lower = 0)
-  assertNumeric(enInt, any.missing = FALSE, lower = 0)
-  assertNumeric(carbInt, any.missing = FALSE, lower = 0)
+  assert_numeric(pop, any.missing = FALSE, lower = 0)
+  assert_numeric(gdp, any.missing = FALSE, lower = 0)
+  assert_numeric(enInt, any.missing = FALSE, lower = 0)
+  assert_numeric(carbInt, any.missing = FALSE, lower = 0)
+  assert_choice(output_type, c("CO2", "C"))
 
   co2 = pop * gdp * enInt * carbInt
   if(output_type == "CO2"){

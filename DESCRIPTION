@@ -11,15 +11,15 @@ Description: The Kaya Identity is an equation that expresses yearly CO2 emission
   amount of economic value.
   Carbon intensity (in tonnes CO2/Gigajoule). Carbon intensity is the CO2 emitted for produced energy.
   This number depends on the energy mix used (coal, solar, . . . ).
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.1
 Suggests:
-    covr
+    covr,
+    testthat
 URL: https://github.com/thuyngocphuongta/Innovationslabor
 Config/testthat/edition: 3
 Imports: 
     checkmate,
-    devtools,
-    testthat
+    devtools

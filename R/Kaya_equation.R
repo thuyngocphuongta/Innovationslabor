@@ -4,8 +4,13 @@ library(devtools)
 library(checkmate)
 
 
-#' Calculation of either the tonnes of Carbon instead of CO2 Emissions yearly
-#' or the CO2 emissions
+#' Kaya identity
+#'
+#' The Kaya identity is a mathematical identity stating that the total emission
+#' level of the greenhouse gas carbon dioxide can be expressed as the product of
+#' four factors: human population, GDP per capita, energy intensity (per unit of
+#' GDP), and carbon intensity (emissions per unit of energy consumed).
+#' FYI: https://en.wikipedia.org/wiki/Kaya_identity
 #'
 #' @param pop numeric indicating Population size (in millions)
 #' @param gdp numeric indicating GDP per capita (in 1000$/person)
